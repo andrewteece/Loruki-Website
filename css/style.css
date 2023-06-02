@@ -3,11 +3,21 @@
 /* CSS CUSTOM PROPERTIES */
 
 :root {
---clr-main-accent: hsl(210, 97%, 47%);
+  --clr-primary-accent: hsl(210, 97%, 47%);
+  --clr-secondary-accent: hsl(214, 18%, 75%);
 
---clr-primary-100: hsl(0, 0%, 100%);
+  --clr-primary-100: hsl(0, 0%, 100%);
+  --clr-primary-800: hsl(0, 0%, 20%);
+
+  --clr-shadow-800: hsla(0, 0%, 0%, 0.2);
+
+  --fs-400: 1rem;
+  --fs-500: 1.5rem;
+  --fs-600: 2rem;
+  --fs-700: 2.5rem;
+  --fs-800: 3rem;
+  --fs-900: 4rem;
 }
-
 
 /* CSS RESET */
 
@@ -23,7 +33,7 @@
 
 body {
   font-family: "Lato", sans-serif;
-  color: #333;
+  color: hsl(0, 0%, 20%);
   line-height: 1.6;
 }
 
@@ -52,19 +62,10 @@ p {
   margin: 0.625rem 0;
 }
 
-/* CONTAINER */
-
-.container {
-  max-width: 68.75rem;
-  margin: 0 auto;
-  padding: 0 2.5rem;
-  overflow: auto;
-}
-
 /* NAV BAR */
 
 .navbar {
-  background-color: var(--clr-main-accent);
+  background-color: var(--clr-primary-accent);
   color: var(--clr-primary-100);
   height: 4.375rem;
 }
@@ -79,21 +80,92 @@ p {
 
 .navbar a {
   color: var(--clr-primary-100);
-  padding: .625rem;
-  margin: 0 .3125rem;
+  padding: 0.625rem;
+  margin: 0 0.3125rem;
 }
 
 .navbar a:hover,
 .navbar a:focus {
-    border-bottom: 2px var(--clr-primary-100) solid;
-    transition: .3s ease-in-out;
+  border-bottom: 2px var(--clr-primary-100) solid;
+  transition: 0.3s ease-in-out;
 }
 
+/* HERO SECTION */
+
+.hero {
+    height: 25rem;
+    background-color: var(--clr-primary-accent);
+    color: var(--clr-primary-100);
+    position: relative;
+}
+
+.hero .grid {
+    grid-template-columns: 55% 45%;
+    gap: 1.875rem;
+    overflow: visible;
+}
+
+.hero h1 {
+    font-size: var(--fs-700);
+}
+
+.hero p {
+    margin: 1.25rem 0;
+}
+
+.hero__form {
+    position: relative;
+    justify-self: flex-end;
+    top: 3.75rem;
+    height: 21.875rem;
+    width: 25rem;
+    padding: 2.5rem;
+    z-index: 100;
+}
+
+.hero__form .form__control {
+   margin: 1.875rem 0; 
+}
+
+.hero__form input[type='text'],
+.hero__form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid var(--clr-secondary-accent);
+    width: 100%;
+}
+
+
+
 /* UTILITY CLASSES */
+
+.container {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  overflow: auto;
+}
+
+.card {
+    background-color: var(--clr-primary-100);
+    color: var(--clr-primary-800);
+    border-radius: .625rem;
+    box-shadow: 0 3px 10px var(--clr-shadow-800);
+    padding: 1.25rem;
+    margin: .625rem;
+}
 
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
