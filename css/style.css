@@ -161,6 +161,20 @@ p {
   padding-top: 6.25rem;
 }
 
+.stats__heading {
+    max-width: 31.25rem;
+    margin: auto;
+}
+
+.stats .grid h3 {
+  font-size: var(--fs-600);
+}
+
+.stats .grid p {
+    font-size: var(--fs-400);
+    font-weight: bold;
+}
+
 /* UTILITY CLASSES */
 
 .container {
