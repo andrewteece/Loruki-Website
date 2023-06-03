@@ -132,6 +132,12 @@ p {
     border: 0;
     border-bottom: 1px solid var(--clr-secondary-accent);
     width: 100%;
+    padding: .1875rem;
+    font-size: var(--fs-400);
+}
+
+.hero__form input:focus {
+    outline: none;
 }
 
 
@@ -152,6 +158,26 @@ p {
     box-shadow: 0 3px 10px var(--clr-shadow-800);
     padding: 1.25rem;
     margin: .625rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .625rem 1.875rem;
+    cursor: pointer;
+    background: var(--clr-primary-accent);
+    color: var(--clr-primary-100);
+    border: none;
+    border-radius: .3125rem;
+}
+
+.btn__outline {
+    background-color: transparent;
+    border: 1px solid var(--clr-primary-100);
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(.96);
 }
 
 .flex {
