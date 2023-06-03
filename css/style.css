@@ -236,7 +236,7 @@ p {
 }
 
 .margin-y__4 {
-  margin: var(--fs-800);
+  margin: var(--fs-800) 0;
 }
 
 .margin-y__5 {
@@ -261,4 +261,44 @@ p {
 
 .margin__5 {
   margin: var(--fs-900);
+}
+
+.padding-y__1 {
+  padding: var(--fs-400) 0;
+}
+
+.padding-y__2 {
+  padding: var(--fs-500) 0;
+}
+
+.padding-y__3 {
+  padding: var(--fs-600) 0;
+}
+
+.padding-y__4 {
+  padding: var(--fs-800) 0;
+}
+
+.padding-y__5 {
+  padding: var(--fs-900) 0;
+}
+
+.padding__1 {
+  padding: var(--fs-400);
+}
+
+.padding__2 {
+  padding: var(--fs-500);
+}
+
+.padding__3 {
+  padding: var(--fs-600);
+}
+
+.padding__4 {
+  padding: var(--fs-800);
+}
+
+.padding__5 {
+  padding: var(--fs-900);
 }
