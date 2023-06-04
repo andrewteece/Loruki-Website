@@ -14,6 +14,7 @@
 
   --clr-shadow-800: hsla(0, 0%, 0%, 0.2);
 
+  --fs-lead: 1.25rem;
   --fs-400: 1rem;
   --fs-500: 1.5rem;
   --fs-600: 2rem;
@@ -254,8 +255,28 @@ p {
 
 .bg__light,
 .btn__light {
-    background-color: ;
+    background-color: var(--clr-primary-200);
     color: var(--clr-primary-800);
+}
+
+.lead__text {
+  font-size: var(--fs-lead);
+}
+
+.sm__text {
+    font-size: var(--fs-400);
+}
+
+.md__text {
+    font-size: var(--fs-600);
+}
+
+.lg__text {
+    font-size: var(--fs-800);
+}
+
+.xl__text {
+    font-size: var(--fs-900);
 }
 
 .text__center {
