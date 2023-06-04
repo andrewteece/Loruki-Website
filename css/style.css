@@ -197,6 +197,28 @@ p {
     grid-template-columns: 4fr 3fr;
 }
 
+/* LANGUAGES SECTION */
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 1.125rem .625rem 2.5rem;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+    font-size: var(--fs-lead);
+    margin-bottom: .625rem;
+}
+
+.languages .card:hover,
+.languages .card:focus {
+    transform: translateY(-0.9375rem);
+}
+
 /* UTILITY CLASSES */
 
 .container {
