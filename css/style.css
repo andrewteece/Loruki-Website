@@ -92,6 +92,7 @@ p {
 .navbar a:focus {
   border-bottom: 2px var(--clr-primary-100) solid;
   transition: 0.3s ease-in-out;
+  color: var(--clr-secondary-accent);
 }
 
 /* HERO SECTION */
@@ -219,6 +220,25 @@ p {
     transform: translateY(-0.9375rem);
 }
 
+/* FOOTER */
+
+.footer .social__links a {
+    margin: 0 .625rem;
+}
+
+.footer__nav a:hover,
+.footer__nav a:focus {
+    border-bottom: 1px solid var(--clr-primary-100);
+    transition: 0.3s ease-in-out;
+    color: var(--clr-primary-accent);
+}
+
+.social__links a:hover,
+.social__links a:focus {
+    color: var(--clr-primary-accent);
+    transition: 0.3s ease-in-out;
+}
+
 /* UTILITY CLASSES */
 
 .container {
@@ -279,6 +299,15 @@ p {
 .btn__light {
     background-color: var(--clr-primary-200);
     color: var(--clr-primary-800);
+}
+
+.bg__primary a,
+.btn__primary a,
+.bg__secondary a,
+.btn__secondary a,
+.bg__dark a,
+.btn__dark a {
+    color: var(--clr-primary-100);
 }
 
 .lead__text {
