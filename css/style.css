@@ -251,7 +251,14 @@ p {
 
 /* DOCS SECTION */
 
+.docs__main h3 {
+  margin: 1.25rem 0;
+}
 
+.docs__main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
 
 /* FOOTER */
 
