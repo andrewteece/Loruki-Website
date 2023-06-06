@@ -311,7 +311,10 @@ pre {
   .cli .grid,
   .cloud .grid,
   .features__head .grid,
-  .docs__head .grid {
+  .features__head--sub .grid,
+  .features__main .grid,
+  .docs__head .grid,
+  .docs__main .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
